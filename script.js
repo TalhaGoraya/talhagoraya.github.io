@@ -75,6 +75,14 @@ function typeEffect() {
 // Start after hero animations settle
 setTimeout(typeEffect, 1200);
 
+// ===== COPY EMAIL =====
+function copyEmail(card) {
+    navigator.clipboard.writeText('iamtalhagoraya@gmail.com');
+    const toast = card.querySelector('.copy-toast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2000);
+}
+
 // ===== PROFILE IMAGE FALLBACK =====
 // If the photo hasn't been added yet, show the "TN" initials placeholder
 const profileImg      = document.getElementById('profileImg');

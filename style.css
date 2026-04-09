@@ -725,6 +725,20 @@ section    { padding:6rem 0; position:relative; overflow:hidden; }
 .contact-card:hover .contact-icon { transform:scale(1.12); box-shadow:var(--glow-md); }
 .contact-card h4 { font-family:var(--font-head); font-size:.88rem; font-weight:700; color:#fff; }
 .contact-card p  { font-size:.78rem; color:var(--text-sub); word-break:break-all; }
+.copy-toast {
+    display:block; font-size:.72rem; font-weight:700;
+    color:var(--secondary); font-family:var(--font-head);
+    opacity:0; transform:translateY(4px);
+    transition:all .3s ease; height:16px;
+}
+.copy-toast.show { opacity:1; transform:translateY(0); }
+.copy-toast {
+    display:block; font-size:.72rem; font-weight:700;
+    color:var(--secondary); font-family:var(--font-head);
+    opacity:0; transform:translateY(4px);
+    transition:all .3s ease; height:16px;
+}
+.copy-toast.show { opacity:1; transform:translateY(0); }
 
 /* =============================================
    FOOTER
