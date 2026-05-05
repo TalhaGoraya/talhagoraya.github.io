@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha Naeem — Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--  NAVBAR  -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">TN</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#extracurricular">Activities</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking" class="nav-cta">Book a Meeting</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!--  HERO SECTION  -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Talha Naeem</h1>
+                <div class="hero-role">
+                    <span>I'm a </span>
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-tagline">Junior Software Developer &nbsp;·&nbsp; Cloud &amp; AI &nbsp;·&nbsp; Full-Stack Web</p>
+                <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Sault Ste. Marie, ON</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#booking" class="btn btn-secondary">Book a Meeting</a>
+                </div>
+                            <div class="hero-social">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=iamtalhagoraya@gmail.com" target="_blank" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/talha-naeem-goraya" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="tel:7059756718" class="social-link" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="assets/images/profile.png" alt="Talha Naeem" class="profile-img" id="profileImg">
+                    <div class="profile-overlay"></div>
+                    <div class="profile-fallback" id="profileFallback">TN</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>I'm a Computer Science graduate from Algoma University (Dean's List) based in Sault Ste. Marie, ON. I build and ship full-stack web applications, work with cloud infrastructure, and use AI tools daily to deliver better software faster.</p>
+                    <p>I've built and deployed a live production web application, earned Microsoft Azure certification, and am actively studying AWS Cloud Practitioner. I thrive in fast-paced environments, take ownership of everything I work on, and get things done right the first time.</p>
+                    <p>I'm open to opportunities in software development, cloud infrastructure, and AI-adjacent roles — places where I can keep building, keep learning, and contribute to something real.</p>
+                    <a href="assets/resume.pdf" download class="btn btn-primary" style="margin-top: 1.5rem;">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>B.Sc Computer Science</h3>
+                        <p>Algoma University — Dean's List</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>4+ Years</h3>
+                        <p>Professional Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>7 Certifications</h3>
+                        <p>Industry Recognized</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Sault Ste. Marie</h3>
+                        <p>Ontario, Canada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  SKILLS SECTION  -->
+    <section id="skills" class="skills-section dark-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Bring</span>
+                <h2 class="section-title light">Skills &amp; Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-cat-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Languages &amp; Web</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> JavaScript</li>
+                        <li><i class="fas fa-check"></i> HTML &amp; CSS</li>
+                        <li><i class="fas fa-check"></i> SQL</li>
+                        <li><i class="fas fa-check"></i> Python (basic)</li>
+                        <li><i class="fas fa-check"></i> REST APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-cat-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud &amp; AI</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> Microsoft Azure (Certified)</li>
+                        <li><i class="fas fa-check"></i> AWS Cloud Practitioner (In Progress)</li>
+                        <li><i class="fas fa-check"></i> AI-900 Azure AI (In Progress)</li>
+                        <li><i class="fas fa-check"></i> 2+ Years AI-Assisted Development</li>
+                        <li><i class="fas fa-check"></i> PostgreSQL basics</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools &amp; Platforms</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> Railway (Deployment)</li>
+                        <li><i class="fas fa-check"></i> GitHub</li>
+                        <li><i class="fas fa-check"></i> Stripe API &amp; Leaflet.js</li>
+                        <li><i class="fas fa-check"></i> Microsoft Office &amp; SharePoint</li>
+                        <li><i class="fas fa-check"></i> Google Workspace</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Team Lead</h3>
+                                <p class="timeline-company">Peavey Industries Ltd. &nbsp;·&nbsp; Sault Ste. Marie, ON</p>
+                            </div>
+                            <span class="timeline-date">Oct 2022 – Sep 2024</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Led daily store operations and supervised team members across departments during high-traffic periods</li>
+                            <li>Trained new hires on company systems, policies, and service standards</li>
+                            <li>Coordinated shift schedules, delegated tasks, and ensured coverage during peak periods</li>
+                            <li>Resolved escalated customer issues on the spot demonstrating sound judgment under pressure</li>
+                            <li>Maintained accurate records for shipments, purchase orders, and inventory</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Team Leadership</span><span>Operations</span><span>Training</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Backend Developer &amp; Admin Support</h3>
+                                <p class="timeline-company">Algoma University Business Society</p>
+                            </div>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Maintained website content and kept organizational records current and accurate</li>
+                            <li>Prepared written summaries and progress reports for faculty and external stakeholders</li>
+                            <li>Coordinated between working groups to track deliverables and flag delays</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Web Development</span><span>Reporting</span><span>Coordination</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>IT Specialist &amp; Administrative Coordinator</h3>
+                                <p class="timeline-company">AUSPAK International (Pvt) Ltd. &nbsp;·&nbsp; Sialkot, Pakistan</p>
+                            </div>
+                            <span class="timeline-date">Sep 2021 – Jul 2022</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Maintained organized digital records, filing systems, and documentation</li>
+                            <li>Prepared technical summaries and management reports on system status</li>
+                            <li>Handled sensitive student immigration and enrollment matters with care and discretion</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>IT Systems</span><span>Documentation</span><span>Data Management</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXTRA CURRICULAR SECTION ===== -->
+    <section id="extracurricular" class="extracurricular-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Beyond Work</span>
+                <h2 class="section-title">Extra Curricular Activities</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Vice President</h3>
+                                <p class="timeline-company">Algoma University Muslim Students Association</p>
+                            </div>
+                            <span class="timeline-date">Jan 2024 – Apr 2025</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Managed all inbound and outbound correspondence, routing urgent matters promptly</li>
+                            <li>Coordinated meeting schedules, event logistics, and appointments for the executive team</li>
+                            <li>Drafted and proofread official communications, announcements, and internal reports</li>
+                            <li>Led group projects by assigning tasks and keeping timelines on track</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Correspondence</span><span>Event Planning</span><span>Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="education-section dark-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title light">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-card" data-aos="zoom-in">
+                <div class="edu-icon"><i class="fas fa-university"></i></div>
+                <div class="edu-content">
+                    <h3>Bachelor of Computer Science</h3>
+                    <p class="edu-school">Algoma University</p>
+                    <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Sault Ste. Marie, ON</p>
+                    <p class="edu-date"><i class="fas fa-calendar"></i> September 2022 – August 2025</p>
+                    <div class="edu-highlights">
+                        <span class="edu-badge"><i class="fas fa-star"></i> Dean's List — September 2022</span>
+                    </div>
+                    <div class="edu-courses">
+                        <p><strong>Relevant Coursework:</strong> Database Management &nbsp;·&nbsp; Systems Analysis &nbsp;·&nbsp; Project Management &nbsp;·&nbsp; Technical Writing &nbsp;·&nbsp; IT Security &amp; Privacy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+                        <span class="project-badge live">Live</span>
+                    </div>
+                    <h3>Pathly — Job Application Tracker</h3>
+                    <p>Full-stack production web app deployed on Railway. Real-time dashboard showing Applied, Interview, Offer, and Rejected stats. Features file upload for resumes and cover letters, live job search, and email tracking.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span><span>Railway</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://job-tracking-application-production.up.railway.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View Live</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-globe"></i></div>
+                        <span class="project-badge live">Live</span>
+                    </div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p>This very website — a fully responsive, animated portfolio built from scratch using HTML, CSS, and JavaScript. Features smooth scroll animations, an integrated booking system, and a recruiter-ready design.</p>
+                    <div class="project-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Calendly</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#hero" class="project-link"><i class="fas fa-eye"></i> View Live</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  CERTIFICATIONS SECTION  -->
+    <section id="certifications" class="certifications-section dark-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title light">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h4>Microsoft Azure Essentials</h4>
+                    <p>Microsoft &amp; LinkedIn Learning &nbsp;·&nbsp; ✓ April 2026</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS Cloud Practitioner</h4>
+                    <p>Amazon Web Services &nbsp;·&nbsp; In Progress</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                    <h4>AI-900 Azure AI Fundamentals</h4>
+                    <p>Microsoft &nbsp;·&nbsp; In Progress</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>CompTIA Security+</h4>
+                    <p>Training Completed</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <h4>Microsoft Access 2019</h4>
+                    <p>NASBA Certified</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <h4>Introduction to SQL &amp; Essential SQL</h4>
+                    <p>NASBA Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Meeting bookiing section  -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Book a Meeting</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Schedule a time that works for you. You'll get an instant confirmation and a reminder before we meet.</p>
+            </div>
+            <div class="booking-container" data-aos="zoom-in">
+                <!-- Calendly inline widget -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/iamtalhagoraya?background_color=0d0d22&text_color=ffffff&primary_color=7b2ff7" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section dark-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title light">Contact</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle light">Open to opportunities, collaborations, and conversations.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=iamtalhagoraya@gmail.com" target="_blank" class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email Me</h4>
+                    <p>iamtalhagoraya@gmail.com</p>
+                </a>
+                <a href="tel:7059756718" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h4>Phone</h4>
+                    <p>(705) 975-6718</p>
+                </a>
+                <a href="https://linkedin.com/in/talha-naeem-goraya" target="_blank" class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h4>LinkedIn</h4>
+                    <p>talha-naeem-goraya</p>
+                </a>
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Location</h4>
+                    <p>Sault Ste. Marie, ON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Designed &amp; Built by <span class="gradient-text">Talha Naeem</span></p>
+            <p class="footer-sub">© 2026 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
